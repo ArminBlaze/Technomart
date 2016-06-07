@@ -45,66 +45,65 @@ body {
 	padding: 0 10px;
 }
 
-.row--inline {
+.row_inline {
   font-size: 0;
 }
 
-.row--inline:after {
+.row_inline:after {
   display: none;
 }
 
-.row--inline .col {
+.row_inline .col {
   float: none;
   display: inline-block;
   vertical-align: top;
 }
 
-
-.col-1 {
+.s-1 {
   width: 8.33%;
 }
 
-.col-2 {
+.s-2 {
   width: 16.66%;
 }
 
-.col-3 {
+.s-3 {
   width: 25%;
 }
 
-.col-4 {
+.s-4 {
   width: 33.33%;
 }
 
-.col-5 {
+.s-5 {
   width: 41.66%;
 }
 
-.col-6 {
+.s-6 {
   width: 50%;
 }
 
-.col-7 {
+.s-7 {
   width: 58.33%;
 }
 
-.col-8 {
+.s-8 {
   width: 66.66%;
 }
 
-.col-9 {
+.s-9 {
   width: 75%;
 }
 
-.col-10 {
+.s-10 {
   width: 83.33%;
 }
 
-.col-11 {
+.s-11 {
   width: 91,66%;
 }
 
-.col-12 {
+.s-12 {
   width: 100%;
 }
 
