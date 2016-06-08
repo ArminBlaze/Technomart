@@ -563,6 +563,7 @@ body {
   margin: 0;
   height: 0;
   background-color: #ddd;
+  min-width: 960px;
 }
 
 *,
@@ -601,6 +602,7 @@ body {
 .col {
   float: left;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .row_inline {
