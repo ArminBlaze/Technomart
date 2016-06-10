@@ -6,14 +6,16 @@
 	<link rel="stylesheet" href="tab.css">
 </head>
 <body>
-	<section class="tabs">
+	<section class="tabs clearfix">
 		<input id="tab_1" type="radio" name="tab" checked>
 		<input id="tab_2" type="radio" name="tab">
 		<input id="tab_3" type="radio" name="tab">
 		
-		<label for="tab_1" id="tab_l1">Tab 1</label>
-		<label for="tab_2" id="tab_l2">Tab 2</label>
-		<label for="tab_3" id="tab_l3">Tab 3</label>
+		<div class="tabs__controls">
+			<label for="tab_1" id="tab_l1">Tab 1</label>
+			<label for="tab_2" id="tab_l2">Tab 2</label>
+			<label for="tab_3" id="tab_l3">Tab 3</label>
+		</div>
 		
 		<div class="tabs__content">
 			<div id="tab_c1">Content of 1 tab</div>

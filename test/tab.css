@@ -1,3 +1,13 @@
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .tabs {
   position: relative;
   margin: 0 auto;
@@ -22,17 +32,23 @@
   display: none;
 }
 
-#tab_1:checked ~ #tab_l1,
-#tab_2:checked ~ #tab_l2,
-#tab_3:checked ~ #tab_l3 {
+#tab_1:checked ~ .tabs__controls #tab_l1,
+#tab_2:checked ~ .tabs__controls #tab_l2,
+#tab_3:checked ~ .tabs__controls #tab_l3 {
   background: #fff;
   color: black;
   z-index: 3;
 }
 
+.tabs__controls {
+  float: left;
+  width: 150px;
+}
+
 .tabs__content {
-  padding-left: 160px;
+  float: left;
   position: relative;
+  width: 400px;
   height: 230px;
   z-index: 2;
 }
