@@ -57,7 +57,125 @@
 <!--	END OF HEADER-->
 
 <main>
+	<div class="catalog">
+		<div class="container">
+			<ul class="breadcrumbs">
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"></a></li>
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+				<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Инструмент</a></li>
+				<li class="breadcrumbs__item"><span class="breadcrumbs__link">Перфораторы</span></li>
+			</ul>
+			<div class="catalog__title">Перфораторы</div>
+			
+<!--			ROW-->
+			<div class="row row_inline">
+<!--			LEFT COLUMN-->
+				<div class="col col_3">
+					<div class="catalog__filter">
+						<div class="catalog__header">
+							Фильтр:
+						</div>
+						<form action="/echo" method="get">
+							<fieldset class="catalog__section">
+								<legend class="catalog__legend">Цена</legend>
+								<div class="range">
+									<div class="range__slider">
+										<div class="range__scale">
+											<div class="range__bar">
+												<div class="range__toggle range__toggle_min"></div>
+												<div class="range__toggle range__toggle_max"></div>
+											</div>
+										</div>
+									</div>
+									<div class="range__priceBlock">
+										<label for="" class="range__price range__price_min" for="min-price">
+											"от "
+											<input id="min-price" name="min-price" type="text" value="0">
+										</label>
+										<label for="" class="range__price range__price_max" for="max-price">
+											"до "
+											<input id="max-price" name="max-price" type="text" value="30 000">
+										</label>
+									</div>
+								</div>
+							</fieldset>
+							
+							<fieldset class="catalog__section">
+								<legend class="catalog__legend">
+									Производители:
+								</legend>
+								<input type="checkbox" name="brand" value="bosch" checked>
+								<label for="bosch" class="catalog__checkbox">Bosch</label>
+								<input type="checkbox" name="brand" value="interskol">
+								<label for="interskol" class="catalog__checkbox">Интерскол</label>
+								<input type="checkbox" name="brand" value="makita" checked>
+								<label for="makita" class="catalog__checkbox">Makita</label>
+								<input type="checkbox" name="brand" value="dewalt">
+								<label for="dewalt" class="catalog__checkbox">DeWalt</label>
+								<input type="checkbox" name="brand" value="hitachi">
+								<label for="hitachi" class="catalog__checkbox">Hitachi</label>
+							</fieldset>
+							
+							<fieldset class="catalog__section">
+								<legend class="catalog__legend">Питание:</legend>
+								<input type="radio" name="power" id="batt" value="batt">
+								<label for="batt" class="catalog__radio">Аккумуляторные</label>
+								<input type="radio" name="power" id="circuit" value="circuit">
+								<label for="circuit" class="catalog__radio">Сетевые</label>
+							</fieldset>
+							<button class="catalog__submit" type="submit">Показать</button>
+						</form>
+					</div>
+				</div>
+<!--				END OF LEFT COLUMN-->
+			
+<!--			RIGHT COLUMN-->
+				<div class="col col_9">
+					<div class="catalog__content">
+						<div class="sorting catalog__header">
+							<span>Сортировка:</span>
+							<span class="sorting__item">По цене</span>
+							<a class="sorting__item" href="#">По типу</a>
+							<a class="sorting__item" href="#">По функционалу</a>
+							<div class="sorting__arrows">
+								<a href="#" class="arrow arrow_up"></a><a href="#" class="arrow arrow_down"></a>
+							</div>
+						</div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="card"></div>
+						<div class="paginator">
+							<span class="paginator__item paginator_item_active"></span>
+							<a class="paginator__item" href="#"></a>
+							<a class="paginator__item" href="#"></a>
+							<a class="paginator__item" href="#"></a>
+						</div>
+					</div>
+				</div>
+<!--				END OF RIGHT COLUMN-->
+			</div>
+<!--			END OF ROW-->
 	
+		</div>
+<!--	END OF CONTAINER-->
+		<div class="info">
+			<div class="container">
+				<h3 class="info__title2">Пара слов о перфораторах</h3>
+				<p class="info__text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			</div>
+		</div>
+
+	</div>
+<!--		END OF CATALOG-->
+
+
 </main>
 
 <!--FOOTER-->
