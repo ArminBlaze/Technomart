@@ -175,10 +175,6 @@ $header__top_height: 42px;
 	}
 }
 
-
-
-
-
 .logo {
 	position: relative;
 	box-sizing: border-box;
@@ -203,8 +199,6 @@ $header__top_height: 42px;
 		background-color: #ba2732;
 	}
 	
-	
-	
 	&:after {
 	position: absolute;
 	content: '';
@@ -224,13 +218,8 @@ $header__top_height: 42px;
 	}
 }
 
-
-
-
-
 .header__logo {
 	width: 220px;
-//	width: 25%;
 	float: left;
 }
 
@@ -241,7 +230,6 @@ $header__top_height: 42px;
 	&:hover .search__submit:before {
 		opacity: 1;
 	}
-	
 }
 
 .header__search {
@@ -257,7 +245,6 @@ $header__top_height: 42px;
 	background: transparent;
 	width: 49px;
 	border: none;
-//	outline: 1px solid white;
 	height: $header__top_height;
 	box-sizing: border-box;
 	cursor: pointer;
@@ -268,7 +255,6 @@ $header__top_height: 42px;
 		opacity: 0.3;
 	}
 	
-	
 }
 
 .search__input {
@@ -276,7 +262,6 @@ $header__top_height: 42px;
 	padding-left: 49px;
 	width: 100%;
 	box-sizing: border-box;
-//	height: $header__top_height;
 	color: white;
 	background: transparent;
 	border: none;
@@ -293,14 +278,14 @@ $header__top_height: 42px;
 	&:focus ~ .search__submit:before {
 	color: red;
 	opacity: 1;
-}
-	
+	}
 }
 
 .search__input::-webkit-input-placeholder {
 	color: white;
 	opacity: 1;
 }
+
 .search__input:-moz-placeholder {
 	color: white;
 	opacity: 1;
@@ -333,9 +318,11 @@ $header__top_height: 42px;
 	&:active {
 		background-color: #518534;
 	}
-	
 }
 
+//END OF HEADER__TOP
+
+//HEADER__BOTTOM
 
 
 
