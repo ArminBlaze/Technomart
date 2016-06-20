@@ -324,6 +324,202 @@ $header__top_height: 42px;
 
 //HEADER__BOTTOM
 
+.header__bottom {
+	margin-top: 45px;
+}
+
+.header__about {
+	font-size: 16px;
+	line-height: 23px;
+	font-family: Cuprum, sans-serif;
+	font-style: italic;
+	color: #ee3643;
+	padding: 4px 60px 4px 62px;
+}
+
+$header__bottom_height: 45px;
+
+.header__phoneBlock {
+	font-size: 21px;
+	border: 3px solid white;
+	width: 270px;
+	height: $header__bottom_height;
+	line-height: $header__bottom_height;
+	padding-left: 9px;
+	color: #e9292a;
+	
+	&:before {
+		color: #b7bfc8;
+		margin-right: 38px;
+	}
+}
+
+.header__address {
+	font-size: 14px;
+	color: #32425c;
+	margin: 0;
+	margin-top: 9px;
+	padding-left: 10px;
+}
+
+.userBlock__unauthorized {
+	display: none;
+}
+
+.userBlock__authorized {
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+}
+
+
+
+.userBlock__btn {
+	background-color: #fff;
+	font-size: 21px;
+	display: block;
+	height: $header__bottom_height;
+	line-height: $header__bottom_height;
+	text-decoration: none;
+	color: black;
+	
+	
+	
+	&:hover {
+		color: #ee3643;
+	}
+	
+	&:active {
+		color: rgba(black, 0.3);
+	}
+	
+	a {
+		text-decoration: none;
+	}
+}
+
+.userBlock__btn_login {
+	width: 121px;
+	margin-left: 20px;
+	float: left;
+	padding-left: 10px;
+	
+	&:before {
+		margin-right: 10px;
+		opacity: 0.3;
+	}
+	
+	&:hover:before {
+		opacity: 1;
+	}
+}
+
+.userBlock__btn_register {
+	width: 150px;
+	float: right;
+	text-align: center;
+}
+
+.userBlock__name {
+	color: black;
+	padding-left: 12px;
+	
+	&:before {
+		font-size: 18px;
+		margin-right: 15px;
+	}
+}
+
+.userBlock__logout {
+	width: 35px;
+	display: block;
+	float: right;
+	height: 100%;
+	font-size: 22px;
+	color: black;
+	
+	&:before {
+		padding-top: 12px;
+	}
+}
+
+.userBlock__btn_nameBlock {
+	margin-bottom: 9px;
+	
+	:before {
+	color: #32425c;
+	opacity: 0.3;
+	}
+	
+	&:hover :before {
+		opacity: 1;
+	}
+	
+	&:active *,
+	&:active :before {
+		color: rgba(black, 0.3);
+	}
+	
+}
+
+
+
+
+
+$userBlock_normal: #32425c;
+$userBlock_hover: #ee3643;
+
+.userBlock__link {
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 10px;
+//	outline: 1px solid lime;
+	position: relative;
+	color: $userBlock_normal;
+	text-decoration: none;
+	
+	span {
+		position: relative;
+		
+		&:after {
+		content: '';
+		position: absolute;
+		bottom: 1px;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: $userBlock_normal;
+		}
+	}
+	
+	&:hover {
+		color: $userBlock_hover;
+		
+		span:after {
+			background: $userBlock_hover;
+		}
+	}
+	
+	&:active span {
+		opacity: 0.3;
+	}
+	
+//	border-bottom: 1px solid black;
+	
+	&:not(:first-child):before {
+		content: '';
+		position: absolute;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: #32425c;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	
+}
 
 
 
