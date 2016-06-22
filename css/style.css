@@ -562,7 +562,7 @@ textarea {
 body {
   margin: 0;
   height: 0;
-  background-color: #ddd;
+  background-color: #fff;
   min-width: 960px;
   font-family: Cuprum, sans-serif;
   font-size: 17px;
@@ -673,67 +673,6 @@ img {
   vertical-align: top;
   max-width: 100%;
   height: auto;
-}
-
-.services__tabs {
-  position: relative;
-  margin: 0 auto;
-  width: 800px;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.services__controls {
-  float: left;
-  z-index: 3;
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.services__tabs label {
-  cursor: pointer;
-  display: block;
-  width: 150px;
-  height: 45px;
-  line-height: 45px;
-  position: relative;
-  text-align: center;
-  border: 1px solid white;
-  box-sizing: border-box;
-}
-
-.services__tabs input {
-  display: none;
-}
-
-#tab_1:checked ~ .services__controls #tab_l1,
-#tab_2:checked ~ .services__controls #tab_l2,
-#tab_3:checked ~ .services__controls #tab_l3 {
-  background: #fff;
-  color: black;
-  z-index: 3;
-}
-
-.services__content {
-  float: left;
-  position: relative;
-  width: 400px;
-  height: 230px;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: 1px solid white;
-}
-
-.services__tab {
-  display: none;
-  padding: 10px;
-  text-align: center;
-}
-
-#tab_1:checked ~ .services__content #tab_c1,
-#tab_2:checked ~ .services__content #tab_c2,
-#tab_3:checked ~ .services__content #tab_c3 {
-  display: block;
 }
 
 .header {
@@ -1138,6 +1077,67 @@ img {
   padding: 0 31px;
   color: white;
   font-size: 17px;
+}
+
+.services__tabs {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.services__controls {
+  float: left;
+  z-index: 3;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.services__tabs label {
+  cursor: pointer;
+  display: block;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  text-align: center;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.services__tabs input {
+  display: none;
+}
+
+#tab_1:checked ~ .services__controls #tab_l1,
+#tab_2:checked ~ .services__controls #tab_l2,
+#tab_3:checked ~ .services__controls #tab_l3 {
+  background: #fff;
+  color: black;
+  z-index: 3;
+}
+
+.services__content {
+  float: left;
+  position: relative;
+  width: 400px;
+  height: 230px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid white;
+}
+
+.services__tab {
+  display: none;
+  padding: 10px;
+  text-align: center;
+}
+
+#tab_1:checked ~ .services__content #tab_c1,
+#tab_2:checked ~ .services__content #tab_c2,
+#tab_3:checked ~ .services__content #tab_c3 {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
