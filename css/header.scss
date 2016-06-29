@@ -53,14 +53,14 @@ $header__top_height: 42px;
 	text-align: center;
 	height: $header__top_height;
 	line-height: $header__top_height + 5px;
-	background: #ee3643;
+	background: $btn_color;
 	
 	&:hover {
-		background-color: #ca2c37;
+		background-color: $btn_hover;
 	}
 	
 	&:active {
-		background-color: #ba2732;
+		background-color: $btn_active;
 	}
 	
 	&:after {
@@ -156,14 +156,14 @@ $header__top_height: 42px;
 }
 
 .header__cart_active {
-	background: #ee3643;
+	background: $btn_color;
 	
 	&:hover {
-		background-color: #ca2c37;
+		background-color: $btn_hover;
 	}
 	
 	&:active {
-		background-color: #ba2732;
+		background-color: $btn_active;
 	}
 }
 
@@ -197,7 +197,7 @@ $header__top_height: 42px;
 	line-height: 23px;
 	font-family: Cuprum, sans-serif;
 	font-style: italic;
-	color: #ee3643;
+	color: $btn_color;
 	padding: 4px 60px 4px 62px;
 }
 
@@ -247,7 +247,7 @@ $header__bottom_height: 45px;
 	color: black;
 	
 	&:hover {
-		color: #ee3643;
+		color: $btn_color;
 	}
 	
 	&:active {
@@ -324,7 +324,7 @@ $header__bottom_height: 45px;
 
 
 $userBlock_normal: #32425c;
-$userBlock_hover: #ee3643;
+$userBlock_hover: $btn_color;
 
 .userBlock__link {
 	font-size: 16px;
