@@ -1215,28 +1215,20 @@ img {
 }
 
 .banner__link {
-  font-size: 14px;
-  line-height: 18px;
-  color: white;
-  text-transform: uppercase;
+  width: auto;
   min-width: 135px;
   display: inline-block;
   vertical-align: top;
-  background: rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  min-height: 38px;
-  line-height: 38px;
-  text-align: center;
-  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.1);
   margin-top: 14px;
 }
 
 .banner__link:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .banner__link:active {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .newRibbon:after {
