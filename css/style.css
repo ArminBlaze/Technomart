@@ -1105,7 +1105,7 @@ img {
 
 .bannersBlock {
   margin-top: 59px;
-  margin-bottom: 53px;
+  margin-bottom: 33px;
 }
 
 .banner {
@@ -1345,6 +1345,47 @@ img {
 #tab_1:checked ~ .services__content #tab_c1,
 #tab_2:checked ~ .services__content #tab_c2,
 #tab_3:checked ~ .services__content #tab_c3 {
+  display: block;
+}
+
+.popular__top {
+  min-height: 89px;
+  background-color: #f7f3ec;
+  position: relative;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.popular__title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular__link {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 253px;
+}
+
+.card {
+  min-height: 318px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+}
+
+.popular {
+  margin-bottom: 20px;
+}
+
+.popular__brand {
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
   display: block;
 }
 
