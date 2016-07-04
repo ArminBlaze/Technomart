@@ -2,31 +2,81 @@
 
 //SERVICES 
 
+.services {
+	background-color: #f2f6f8;
+}
+
+.services__top {
+	padding-top: 43px;
+}
+
+.services__title {
+	font-family: "Cuprum", sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 24px;
+	margin-bottom: 30px;
+}
+
+.services__desc {
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "PT Sans", sans-serif;
+}
+
+.services__slider {
+	margin-top: 20px;
+}
+
 .services__tabs {
 	position: relative;
-	margin: 0 auto;
-	width: 800px;
-	color: rgba(white, 0.9);
+//	margin: 0 auto;
+//	width: 800px;
+	padding-top: 48px;
 }
 
 .services__controls {
 	float: left;
   z-index: 3;
   position: relative;
-  background: rgba(black, 0.5);
+//  background: rgba(black, 0.5);
+	width: 240px;
+	height: 279px;
+	box-sizing: border-box;
+//	padding-top: 49px;
+}
+
+.services__controls:after {
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	content: '';
+	right: 0;
+	top: -49px;
+	background: url(../img/services__controls.png) no-repeat 100% 0;
+	z-index: 100;
 }
 
 .services__tabs label {
 	cursor: pointer;
 	display: block;
-	// float: left;
-	width: 150px;
-	height: 45px;
-	line-height: 45px;
+	height: 61px;
+//	line-height: 62px;
 	position: relative;
-	text-align: center;
-	border: 1px solid white;
+//	text-align: center;
+	border-top: 1px solid #405069;
+	border-bottom: 1px solid #293449;
   box-sizing: border-box;
+	font-weight: bold;	
+	font-size: 21px;
+	background-color: #32425c;
+	padding: 15px 22px;
+	color: white;
+	
+	&:hover {
+		background-color: #293449;
+	}
 }
 
 .services__tabs input {
@@ -37,31 +87,66 @@
 #tab_2:checked ~ .services__controls #tab_l2,
 #tab_3:checked ~ .services__controls #tab_l3 {
 	background: #fff;
-	color: black;
+	color: #32425c;
 	z-index: 3;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 
 .services__content {
-	float: left;
+	float: right;
 	position: relative;
-	width: 400px;
-	height: 230px;
+	width: 620px;
 	z-index: 2;
-  background: rgba(black, 0.5);
-  color: white;
-  border: 1px solid white;
 }
 
 .services__tab {
 	display: none;
-	// height: 100%;
-  padding: 10px;
-  text-align: center;
-  // background: red;
+	height: 285px;
 }
 
 #tab_1:checked ~ .services__content #tab_c1,
 #tab_2:checked ~ .services__content #tab_c2,
 #tab_3:checked ~ .services__content #tab_c3 {
 	display: block;
+}
+
+.services__title_big {
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+	margin-bottom: 22px;
+}
+
+.services__desc_delivery {
+	width: 275px;
+}
+
+.services__desc_guarantee {
+	width: 385px;
+}
+
+.services__desc_credit {
+	width: 285px;
+}
+
+.services__tab {
+	background: no-repeat right top;
+}
+
+.services__tab_delivery {
+	background-image: url(../img/services__tab_delivery.png);
+	background-position: right 23px;
+}
+
+.services__tab_guarantee {
+	background-image: url(../img/services__tab_guarantee.png);
+}
+
+.services__tab_credit {
+	background-image: url(../img/services__tab_credit.png);
+}
+
+.services__btn {
+	margin-top: 20px;
 }
