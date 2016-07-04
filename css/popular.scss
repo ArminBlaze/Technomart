@@ -1,0 +1,52 @@
+.popular__top {
+	min-height: 89px;
+	background-color: #f7f3ec;
+	position: relative;
+	padding: 30px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.popular__title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.popular__link {
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 253px;
+}
+
+.card {
+	min-height: 318px;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+}
+
+.popular {
+	margin-bottom: 20px;
+}
+
+.popular__brand {
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	display: block;
+	
+	&:hover {
+		box-shadow: 0 10px 25px rgba(#293449, 0.4);
+	}
+	
+	&:active {
+		box-shadow: 0 4px 10px rgba(#293449, 0.4);
+	}
+	
+	&:active > * {
+		opacity: 0.3;
+	}
+}
