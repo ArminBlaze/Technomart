@@ -44,11 +44,15 @@ $header__top_height: 42px;
 }
 
 .logo {
+	display: block;
+	width: 100%;
 	position: relative;
 	box-sizing: border-box;
 	font-size: 24px;
+	font-weight: 700;
 	letter-spacing: 0.03em;
 	color: white;
+	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 	height: $header__top_height;
