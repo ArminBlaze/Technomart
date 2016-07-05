@@ -1,0 +1,73 @@
+.info__title {
+	font-family: "Cuprum", sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 24px;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.info {
+	padding-top: 25px;
+}
+
+.info__left {
+	float: left;
+	width: 540px;
+}
+
+.info__right {
+	float: right;
+	width: 300px;
+}
+
+.info__text {
+	font-size: 13px;
+	line-height: 24px;
+	font-family: "PT Sans", sans-serif;
+	margin: 22px 0;
+}
+
+.info__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.info__listItem {
+	padding-left: 35px;
+	font-family: "Cuprum", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	position: relative;
+	
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		content: '';
+		line-height: inherit;
+		width: 25px;
+		height: 2px;
+		background-color: $btn_color;
+	}
+}
+
+.info__about {
+	margin-top: 35px;
+	width: 220px;
+}
+
+.info__map {
+	margin-top: 30px;
+	min-height: 158px;
+}
+
+.info__contact {
+	margin-top: 40px;
+	width: 100%;
+}
