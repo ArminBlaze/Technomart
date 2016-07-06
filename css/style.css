@@ -1671,6 +1671,7 @@ img {
   background-color: #212a3a;
   border-radius: 50%;
   box-sizing: border-box;
+  margin-right: 5px;
 }
 
 .social__btn:hover {
