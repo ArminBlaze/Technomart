@@ -742,11 +742,15 @@ img {
 }
 
 .logo {
+  display: block;
+  width: 100%;
   position: relative;
   box-sizing: border-box;
   font-size: 24px;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: white;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   height: 42px;
@@ -1500,6 +1504,7 @@ img {
 
 .info {
   padding-top: 25px;
+  margin-bottom: 85px;
 }
 
 .info__left {
@@ -1560,6 +1565,141 @@ img {
 .info__contact {
   margin-top: 40px;
   width: 100%;
+}
+
+.footer__top {
+  background-color: #32425c;
+  color: #f1f5f7;
+  padding-bottom: 48px;
+}
+
+.footer__bottom {
+  background-color: #293449;
+  color: white;
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
+.logo_footer {
+  height: 63px;
+  line-height: 68px;
+  font-size: 30px;
+}
+
+.footer__link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  text-decoration: none;
+  padding-top: 37px;
+  position: relative;
+}
+
+.footer__link:after {
+  content: none;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #f1f5f7;
+}
+
+.footer__link:hover:after {
+  content: '';
+}
+
+.footer__link:active {
+  opacity: 0.5;
+}
+
+.footer__item {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.footer__item:first-child {
+  margin-left: 0;
+}
+
+.footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link_color {
+  padding-top: 35px;
+  color: #ffd180;
+}
+
+.footer__link_color:after {
+  background-color: #ffd180;
+}
+
+.footer__address {
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 33px;
+  padding-left: 5px;
+}
+
+.footer__copy {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Cuprum, sans-serif;
+}
+
+.social {
+  text-align: center;
+}
+
+.social__btn {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  background-color: #212a3a;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.social__btn:hover {
+  background-color: #ee3643;
+}
+
+.infoBlock {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Cuprum, sans-serif;
+}
+
+.infoBlock:last-child {
+  margin-left: 53px;
+}
+
+.infoBlock__link {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.infoBlock__link:hover {
+  border-bottom: 1px solid;
+}
+
+.infoBlock__link:active {
+  color: #ee3643;
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=style.css.map */
