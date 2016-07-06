@@ -192,22 +192,51 @@ img {
 //Catalog.html
 
 
-.breadcrumbs__link {
-	font-size: 13px;
-	line-height: 18px;
-	font-family: "PT Sans", sans-serif;
-	text-transform: uppercase;
-	text-decoration: none;
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+	margin: 19px 0;
+	font-size: 0;
 }
 
 .breadcrumbs__item {
 	display: inline-block;
+	padding-right: 15px;
+	vertical-align: middle;
+	position: relative;
 }
 
-.breadcrumbs {
-	padding: 0;
+$breadcrumbs_height: 20px;
+
+.breadcrumbs__item:not(:first-child) {
+	padding-left: 25px;
+	
+	&:after {
+		position: absolute;
+		content: "\3e";
+		font-size: 14px;
+		line-height: $breadcrumbs_height;
+		top: 0;
+		left: 0;
+		font-family: "symbols-technomart";
+		color: #c1c6ce;
+	}
+}
+
+.breadcrumbs__link {
+	font-size: 13px;
+	line-height: $breadcrumbs_height;
+	font-family: "PT Sans", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+
+.breadcrumbs__link_home:before {
+	color: #c1c6ce;
+	font-size: 16px;
+	line-height: $breadcrumbs_height;
 	margin: 0;
-	margin: 20px 0;
+	padding: 0;
 }
-
-
