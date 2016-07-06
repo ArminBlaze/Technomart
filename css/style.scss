@@ -150,6 +150,34 @@ img {
 	}
 }
 
+.titleBlock {
+	min-height: 89px;
+	background-color: #f7f3ec;
+	position: relative;
+	padding: 30px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.titleBlock__title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.titleBlock__link {
+	position: absolute;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 253px;
+}
+
+.titleBlock_blue {
+	background-color: #f2f6f8;
+}
+
 //END OF SETTINGS
 
 //index.html
@@ -164,7 +192,22 @@ img {
 //Catalog.html
 
 
+.breadcrumbs__link {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+}
 
+.breadcrumbs__item {
+	display: inline-block;
+}
 
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+	margin: 20px 0;
+}
 
 

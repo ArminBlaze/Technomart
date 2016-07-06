@@ -699,6 +699,34 @@ img {
   background-color: #ba2732;
 }
 
+.titleBlock {
+  min-height: 89px;
+  background-color: #f7f3ec;
+  position: relative;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.titleBlock__title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.titleBlock__link {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 253px;
+}
+
+.titleBlock_blue {
+  background-color: #f2f6f8;
+}
+
 .header {
   min-height: 320px;
   background: #f1f5f7;
@@ -1291,30 +1319,6 @@ img {
   right: 0;
 }
 
-.popular__top {
-  min-height: 89px;
-  background-color: #f7f3ec;
-  position: relative;
-  padding: 30px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.popular__title {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  text-transform: uppercase;
-}
-
-.popular__link {
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 253px;
-}
-
 .card {
   min-height: 318px;
   box-sizing: border-box;
@@ -1701,6 +1705,24 @@ img {
 .infoBlock__link:active {
   color: #ee3643;
   border-bottom: none;
+}
+
+.breadcrumbs__link {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin: 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
