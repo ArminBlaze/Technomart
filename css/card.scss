@@ -1,0 +1,158 @@
+.catalog__cards {
+//	margin: 20px auto;
+	margin-left: -20px;
+}
+
+.card {
+	position: relative;
+	width: 220px;
+	min-height: 318px;
+	box-sizing: border-box;
+	border: 1px solid #e5e5e5;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	font-family: "PT Sans", sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+}
+
+.card:nth-child(3n) {
+//	margin-right: 0;
+}
+
+.card__title {
+	font-size: 18px;
+	line-height: 20px;
+	min-height: 40px;
+	padding: 0 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.card__discount {
+	font-size: 17px;
+	min-height: 20px;
+	margin-bottom: 8px;
+	color: #999;
+	text-decoration: line-through;
+	text-transform: uppercase;
+}
+
+.card__price {
+	position: relative;
+	box-sizing: border-box;
+	margin: auto;
+	margin-bottom: 20px;
+	min-height: 38px;
+//	line-height: 38px;
+	padding: 9px 10px;
+	width: 140px;
+	background-color: $btn_color;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 3px;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		top: -1px;
+		right: -20px;
+		width: 0;
+		height: 0;
+		border: 20px solid white;
+		border-left-color: transparent;
+	}
+}
+
+.card__actions {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	height: 160px;
+	box-sizing: border-box;
+	padding: 43px 0;
+	background-color: white;
+	z-index: 10;
+}
+
+.card:hover .card__actions {
+	display: block;
+}
+
+.card__image {
+	width: 218px;
+	height: 160px;
+	
+	& img {
+		max-width: 100%;
+	}
+}
+
+.card__buy,
+.card__bookmark{
+	width: 135px;
+	height: 138px;
+	display: block;
+	margin: 0 auto;
+	height: 38px;
+	padding: 7px 0;
+	box-sizing: border-box;
+	margin-bottom: 7px;
+	border-radius: 3px;
+	border: 3px solid transparent;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Cuprum, sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.card__buy {
+	color: white;
+	background-color: #63a63e;
+	border-bottom-color: #367315;
+	position: relative;
+	
+	&:before {
+		text-transform: none;
+		font-family: "symbols-technomart";
+		content: "\62";
+		position: absolute;
+		font-size: 17px;
+		top: 6px;
+		left: 9px;
+		opacity: 0.3;
+	}
+	
+	&:hover {
+		background-color: #5fbb2d;
+		
+		&:before {
+			opacity: 1;
+		}
+	}
+	
+	&:active {
+		background-color: #518534;
+		border-bottom-color: #518534;
+	}
+}
+
+.card__bookmark {
+	color: #32425c;
+	border-color: #63a63e;
+	
+	&:hover {
+		border-color: #32425c;
+	}
+	
+	&:active {
+		opacity: 0.3;
+	}
+}

@@ -727,6 +727,22 @@ img {
   background-color: #f2f6f8;
 }
 
+.flag {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  top: -1px;
+  right: -1px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.flag_new {
+  background: url(../img/newRibbon.png) no-repeat;
+}
+
 .header {
   min-height: 320px;
   background: #f1f5f7;
@@ -1319,12 +1335,6 @@ img {
   right: 0;
 }
 
-.card {
-  min-height: 318px;
-  box-sizing: border-box;
-  border: 1px solid #e5e5e5;
-}
-
 .popular {
   margin-bottom: 20px;
 }
@@ -1752,6 +1762,159 @@ img {
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+.catalog__cards {
+  margin-left: -20px;
+}
+
+.card {
+  position: relative;
+  width: 220px;
+  min-height: 318px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 20px;
+  min-height: 40px;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card__discount {
+  font-size: 17px;
+  min-height: 20px;
+  margin-bottom: 8px;
+  color: #999;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.card__price {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 20px;
+  min-height: 38px;
+  padding: 9px 10px;
+  width: 140px;
+  background-color: #ee3643;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.card__price:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: transparent;
+}
+
+.card__actions {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 43px 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.card:hover .card__actions {
+  display: block;
+}
+
+.card__image {
+  width: 218px;
+  height: 160px;
+}
+
+.card__image img {
+  max-width: 100%;
+}
+
+.card__buy,
+.card__bookmark {
+  width: 135px;
+  height: 138px;
+  display: block;
+  margin: 0 auto;
+  height: 38px;
+  padding: 7px 0;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Cuprum, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.card__buy {
+  color: white;
+  background-color: #63a63e;
+  border-bottom-color: #367315;
+  position: relative;
+}
+
+.card__buy:before {
+  text-transform: none;
+  font-family: "symbols-technomart";
+  content: "\62";
+  position: absolute;
+  font-size: 17px;
+  top: 6px;
+  left: 9px;
+  opacity: 0.3;
+}
+
+.card__buy:hover {
+  background-color: #5fbb2d;
+}
+
+.card__buy:hover:before {
+  opacity: 1;
+}
+
+.card__buy:active {
+  background-color: #518534;
+  border-bottom-color: #518534;
+}
+
+.card__bookmark {
+  color: #32425c;
+  border-color: #63a63e;
+}
+
+.card__bookmark:hover {
+  border-color: #32425c;
+}
+
+.card__bookmark:active {
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=style.css.map */

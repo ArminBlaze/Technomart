@@ -178,6 +178,23 @@ img {
 	background-color: #f2f6f8;
 }
 
+.flag {
+	position: absolute;
+	content: '';
+	width: 60px;
+	height: 60px;
+	top: -1px;
+	right: -1px;
+	text-indent: -1000px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.flag_new {
+	background: url(../img/newRibbon.png) no-repeat;
+}
+
+
 //END OF SETTINGS
 
 //index.html
@@ -240,3 +257,5 @@ $breadcrumbs_height: 20px;
 	margin: 0;
 	padding: 0;
 }
+
+@import "card";
