@@ -1842,6 +1842,10 @@ img {
   z-index: 10;
 }
 
+.card:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.4);
+}
+
 .card:hover .card__actions {
   display: block;
 }
@@ -1988,6 +1992,61 @@ img {
 .arrow_active {
   color: red;
   opacity: 1;
+}
+
+.paginator {
+  margin-top: 52px;
+  margin-bottom: 60px;
+}
+
+.paginator__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 38px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 9px 10px 10px;
+}
+
+.paginator__item:hover {
+  border-color: #bdc6ca;
+}
+
+.paginator__item:active {
+  border-color: #ee3643;
+}
+
+.paginator__item_big {
+  width: 140px;
+}
+
+.paginator__item_active {
+  color: white;
+  background-color: #ee3643;
+  border-color: transparent;
+  cursor: default;
+}
+
+.paginator__item_active:hover {
+  border-color: transparent;
+}
+
+.paginator__item_active:active {
+  border-color: transparent;
+}
+
+.info_blue {
+  background-color: #f2f6f8;
+  padding-top: 8px;
+  padding-bottom: 45px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

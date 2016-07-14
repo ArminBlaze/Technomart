@@ -81,9 +81,14 @@
 	z-index: 10;
 }
 
+.card:hover {
+	box-shadow: 0 10px 25px rgba(#293449, 0.4);
+}
+
 .card:hover .card__actions {
 	display: block;
 }
+
 
 .card__image {
 	width: 218px;
