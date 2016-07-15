@@ -2049,6 +2049,14 @@ img {
   opacity: 0.3;
 }
 
+.catalog__section {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
 .catalog__legend {
   font-size: 17px;
   line-height: 30px;
@@ -2057,16 +2065,12 @@ img {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.catalog__section {
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 25px;
+.catalog__section:first-child .catalog__legend {
+  padding-top: 10px;
 }
 
 .range {
