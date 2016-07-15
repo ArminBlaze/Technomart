@@ -1,0 +1,109 @@
+.catalog__legend {
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.catalog__section {
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 25px;
+}
+
+.range {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	font-style: normal;
+	color: #283136;
+}
+
+.range__slider {
+	position: relative;
+	height: 80px;
+	background: #f1f1f1;
+	border-radius: 0 0 5px 5px;
+	overflow: hidden;
+	margin-bottom: 8px;
+	padding: 0 20px;
+}
+
+.range__scale {
+	background: #d7dcde;
+	margin-top: 39px;
+	height: 2px;
+}
+
+.range__bar {
+	height: 2px;
+	background: #00ca74;
+	position: relative;
+}
+
+.range__toggle {
+	box-sizing: content-box;
+	width: 4px;
+	height: 4px;
+	border: 8px solid white;
+	border-radius: 50%;
+	background: #ababab;
+	box-shadow: 0 2px 0 0 #cfcfcf;
+	position: absolute;
+	top: -9px;
+	cursor: pointer;
+	
+	&:hover {
+		background-color: #d5d5d5;
+	}
+}
+
+.range__toggle_max {
+	right: 0px;
+}
+
+.range__priceBlock {
+	position: relative;
+	min-height: 38px;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #444;
+	text-align: center;
+	line-height: 38px;
+}
+
+
+.range__price_min {
+	position: absolute;
+	left: 0;
+}
+
+.range__price_max {
+	position: absolute;
+	right: 0;
+}
+
+.range__input {
+	box-sizing: border-box;
+	width: 95px;
+	padding: 0 5px;
+	background: #f1f1f1;
+	border-radius: 5px;
+	min-height: 38px;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	font-size: 17px;
+	font-family: "PT Sans", sans-serif;
+	color: black;
+	font-style: normal;
+	color: #283136;
+}
+

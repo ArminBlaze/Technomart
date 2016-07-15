@@ -93,24 +93,23 @@
 						</div>
 						<form action="/echo" method="get">
 							<fieldset class="catalog__section">
-								<legend class="catalog__legend">Цена</legend>
+								<legend class="catalog__legend">Цена:</legend>
 								<div class="range">
 									<div class="range__slider">
 										<div class="range__scale">
-											<div class="range__bar">
+											<div class="range__bar" style="margin-left: 0; margin-right: 20px;">
 												<div class="range__toggle range__toggle_min"></div>
 												<div class="range__toggle range__toggle_max"></div>
 											</div>
 										</div>
 									</div>
 									<div class="range__priceBlock">
-										<label for="" class="range__price range__price_min" for="min-price">
-											"от "
-											<input id="min-price" name="min-price" type="text" value="0">
+										<label class="range__price range__price_min" for="min-price"><input class="range__input" id="min-price" name="min-price" type="text" value="0">
+										
 										</label>
-										<label for="" class="range__price range__price_max" for="max-price">
-											"до "
-											<input id="max-price" name="max-price" type="text" value="30 000">
+										&#8212;
+										<label class="range__price range__price_max" for="max-price">
+										<input class="range__input" id="max-price" name="max-price" type="text" value="30 000">
 										</label>
 									</div>
 								</div>
