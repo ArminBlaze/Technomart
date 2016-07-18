@@ -92,7 +92,7 @@
 							Фильтр:
 						</div>
 						<form action="/echo" method="get">
-							<fieldset class="catalog__section">
+							<fieldset class="catalog__section catalog__section_min">
 								<legend class="catalog__legend">Цена:</legend>
 								<div class="range">
 									<div class="range__slider">
@@ -119,23 +119,23 @@
 								<legend class="catalog__legend">
 									Производители:
 								</legend>
-								<input type="checkbox" name="brand" value="bosch" checked>
+								<input class="catalog__input" id="bosch" type="checkbox" name="brand" value="bosch" checked>
 								<label for="bosch" class="catalog__checkbox">Bosch</label>
-								<input type="checkbox" name="brand" value="interskol">
+								<input class="catalog__input" id="interskol" type="checkbox" name="brand" value="interskol">
 								<label for="interskol" class="catalog__checkbox">Интерскол</label>
-								<input type="checkbox" name="brand" value="makita" checked>
+								<input class="catalog__input" id="makita" type="checkbox" name="brand" value="makita" checked>
 								<label for="makita" class="catalog__checkbox">Makita</label>
-								<input type="checkbox" name="brand" value="dewalt">
+								<input class="catalog__input" id="dewalt" type="checkbox" name="brand" value="dewalt">
 								<label for="dewalt" class="catalog__checkbox">DeWalt</label>
-								<input type="checkbox" name="brand" value="hitachi">
+								<input class="catalog__input" id="hitachi" type="checkbox" name="brand" value="hitachi">
 								<label for="hitachi" class="catalog__checkbox">Hitachi</label>
 							</fieldset>
 							
 							<fieldset class="catalog__section">
 								<legend class="catalog__legend">Питание:</legend>
-								<input type="radio" name="power" id="batt" value="batt">
+								<input class="catalog__input" type="radio" name="power" id="batt" value="batt" checked>
 								<label for="batt" class="catalog__radio">Аккумуляторные</label>
-								<input type="radio" name="power" id="circuit" value="circuit">
+								<input class="catalog__input" type="radio" name="power" id="circuit" value="circuit">
 								<label for="circuit" class="catalog__radio">Сетевые</label>
 							</fieldset>
 							<button class="catalog__submit" type="submit">Показать</button>
@@ -207,6 +207,7 @@
 								<div class="card__price">15 000 Р.</div>
 							</div>
 							<div class="card">
+								<div class="flag flag_new">Новинка</div>
 								<div class="card__actions">
 									<a href="#" class="card__buy">Купить</a>
 									<a href="#" class="card__bookmark">В закладки</a>
@@ -231,6 +232,7 @@
 								<div class="card__price">15 000 Р.</div>
 							</div>
 							<div class="card">
+								<div class="flag flag_new">Новинка</div>
 								<div class="card__actions">
 									<a href="#" class="card__buy">Купить</a>
 									<a href="#" class="card__bookmark">В закладки</a>
