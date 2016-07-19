@@ -140,6 +140,9 @@ img {
 	color: white;
 	text-transform: uppercase;
 	border-radius: 3px;
+	border: none;
+	outline: none;
+	cursor: pointer;
 	
 	&:hover {
 		background-color: $btn_hover;

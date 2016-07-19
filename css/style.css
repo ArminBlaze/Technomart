@@ -689,6 +689,9 @@ img {
   color: white;
   text-transform: uppercase;
   border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -1945,6 +1948,75 @@ img {
 
 .card__bookmark:active {
   opacity: 0.3;
+}
+
+.modalBuy {
+  width: 620px;
+  min-height: 282px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-sizing: border-box;
+  border-top: 7px solid #ee3643;
+  z-index: 100;
+}
+
+.modalBuy__top {
+  min-height: 165px;
+  box-sizing: border-box;
+  padding: 50px 80px;
+}
+
+.modalBuy__title {
+  font-size: 30px;
+  line-height: 66px;
+  margin: 0;
+  padding-left: 100px;
+  font-family: Cuprum, sans-serif;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.modalBuy__title:before {
+  content: '';
+  background-image: url(../img/modalBuy__title.png);
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 0;
+  top: 0;
+}
+
+.modalBuy__bottom {
+  padding: 37px 80px;
+  box-sizing: border-box;
+  min-height: 112px;
+  background-color: #f1f1f1;
+  font-size: 0;
+}
+
+.modalBuy__button {
+  width: 220px;
+  display: inline-block;
+}
+
+.modalBuy__button:first-child {
+  margin-right: 20px;
+}
+
+.modalBuy__button_white {
+  background-color: #fff;
+  color: #000;
+}
+
+.modalBuy__button_white:hover {
+  background-color: #fcfcfc;
+}
+
+.modalBuy__button_white:active {
+  background-color: #f9f9f9;
 }
 
 .catalog__section {
