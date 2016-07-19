@@ -224,10 +224,11 @@
 	color: #000;
 	
 	&:hover {
-		background-color: #fcfcfc;
+		background-color: #f9f9f9;
 	}
 	
 	&:active {
-		background-color: #f9f9f9;
+		background-color: #000;
+		color: white;
 	}
 }
