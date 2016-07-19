@@ -1786,6 +1786,10 @@ img {
   margin: 0;
 }
 
+.catalog__cards_index {
+  margin-top: -20px;
+}
+
 .catalog__cards {
   margin-left: -20px;
 }
@@ -2147,6 +2151,7 @@ img {
   border-radius: 3px;
   box-sizing: border-box;
   border: 1px solid #e5e5e5;
+  outline: none;
 }
 
 .catalog__submit:hover {
