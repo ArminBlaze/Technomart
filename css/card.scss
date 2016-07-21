@@ -163,6 +163,7 @@
 }
 
 .modalBuy {
+	display: none;
 	width: 620px;
 	min-height: 282px;
 	position: fixed;
@@ -219,7 +220,7 @@
 	}
 }
 
-.modalBuy__button_white {
+.modalBuy__button_close {
 	background-color: #fff;
 	color: #000;
 	
@@ -234,13 +235,13 @@
 }
 
 .modalBuy__close {
-	width: 22px;
-	height: 22px;
+	width: 25px;
+	height: 25px;
 	font-size: 0;
 	margin: 0;
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 7px;
+	right: 7px;
 	background-color: transparent;
 	border: 0;
 	outline: 0;
@@ -253,7 +254,7 @@
 		background-color: $btn_color;
 		width: 26px;
 		height: 5px;
-		top: 7px;
+		top: 10px;
 		left: -1px;
 		border-radius: 1px;
 		transform: rotate(45deg);

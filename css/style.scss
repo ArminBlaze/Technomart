@@ -217,3 +217,15 @@ img {
 @import "catalog-right";
 
 
+@keyframes bounce {
+	0% {transform: translateX(-50%) translateY(-2000px);}
+	70% {transform: translateX(-50%) translateY(-43%);}
+	90% {transform: translateX(-50%) translateY(-53%);}
+	100% {transform: translateX(-50%) translateY(-50%);}
+}
+
+.modalShow {
+	display: block;
+	animation: bounce 0.6s;
+	
+}

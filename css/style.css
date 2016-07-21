@@ -1951,6 +1951,7 @@ img {
 }
 
 .modalBuy {
+  display: none;
   width: 620px;
   min-height: 282px;
   position: fixed;
@@ -2007,28 +2008,28 @@ img {
   margin-right: 20px;
 }
 
-.modalBuy__button_white {
+.modalBuy__button_close {
   background-color: #fff;
   color: #000;
 }
 
-.modalBuy__button_white:hover {
+.modalBuy__button_close:hover {
   background-color: #f9f9f9;
 }
 
-.modalBuy__button_white:active {
+.modalBuy__button_close:active {
   background-color: #000;
   color: white;
 }
 
 .modalBuy__close {
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   font-size: 0;
   margin: 0;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 7px;
+  right: 7px;
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -2041,7 +2042,7 @@ img {
   background-color: #ee3643;
   width: 26px;
   height: 5px;
-  top: 7px;
+  top: 10px;
   left: -1px;
   border-radius: 1px;
   transform: rotate(45deg);
@@ -2370,6 +2371,26 @@ img {
 
 .paginator__item_active:active {
   border-color: transparent;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(-2000px);
+  }
+  70% {
+    transform: translateX(-50%) translateY(-43%);
+  }
+  90% {
+    transform: translateX(-50%) translateY(-53%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.modalShow {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */
