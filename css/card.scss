@@ -253,6 +253,7 @@
 	border: 0;
 	outline: 0;
 	cursor: pointer;
+	z-index: 100;
 	
 	&:before,
 	&:after {
