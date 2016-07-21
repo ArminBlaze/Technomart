@@ -1,15 +1,18 @@
 "use strict";
-var buy = document.querySelector(".card__buy");
+var buy = document.querySelectorAll(".card__buy");
 var popup = document.querySelector(".modalBuy");
 var close = popup.querySelector(".modalBuy__close");
 var close2 = popup.querySelector(".modalBuy__button_close");
+//alert(buy);
 
-buy.addEventListener("click", function (e) {
-	e.preventDefault();
-	popup.classList.add("modalShow");
+for(var i = 0; i < buy.length; i++) {
+	buy[i].addEventListener("click", function (e) {
+		e.preventDefault();
+		popup.classList.add("modalShow");
+		//взять card__title
+	});
+}
 	
-});
-
 close.addEventListener("click", function (e) {
 	e.preventDefault();
 	popup.classList.remove("modalShow");
