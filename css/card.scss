@@ -178,30 +178,37 @@
 }
 
 .modalBuy__top {
+	position: relative;
 	min-height: 165px;
 	box-sizing: border-box;
 	padding: 50px 80px 45px;
-}
-
-.modalBuy__title {
-	font-size: 30px;
-	line-height: 66px;
-	margin: 0;
-	padding-left: 100px;
-	font-family: Cuprum, sans-serif;
-	letter-spacing: -0.02em;
-	position: relative;
 	
 	&:before {
 		content: '';
 		background-image: url(../img/modalBuy__title.png);
 		position: absolute;
+//		float: left;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-right: 33px;
 		width: 66px;
 		height: 66px;
-		left: 0;
-		top: 0;
 	}
 }
+
+.modalBuy__title {
+	font-size: 30px;
+	line-height: 1.3em;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+	font-family: Cuprum, sans-serif;
+	letter-spacing: -0.02em;
+	position: relative;
+}
+
+
 
 .modalBuy__bottom {
 	padding: 37px 80px;
