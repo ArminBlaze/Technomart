@@ -229,3 +229,80 @@ img {
 	animation: bounce 0.6s;
 	
 }
+.modal_form {
+	
+}
+
+.btn_big {
+	width: 100%;
+}
+
+.modal__top_form {
+	padding-top: 47px;
+	min-height: 311px;
+	padding-bottom: 37px;
+}
+
+.modal__column {
+	width: 220px;
+}
+
+.modal__column_left {
+	float: left;
+}
+
+.modal__column_right {
+	float: right;
+}
+
+.modal__label {
+	font-size: 18px;
+	line-height: 18px;
+	display: block;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.modal__input {
+	border: 2px solid #d7dcde;
+	outline: none;
+	border-radius: 3px;
+	width: 100%;
+	min-height: 38px;
+	padding: 8px 14px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "PT Sans", sans-serif;
+	vertical-align: top;
+	
+	&:hover {
+		border-color: #bdc6ca;
+	}
+	
+	&:focus {
+		border-color: $btn_color;
+	}
+}
+
+.modal__input_text {
+	min-height: 114px;
+	resize: none;
+	margin-bottom: 0;
+}
+
+ .modal__input::-webkit-input-placeholder {
+  color: black;
+}
+
+.modal__input::-moz-placeholder {
+	color: black; 
+	font-weight: 500;
+	opacity: 1;
+}
+
+.modal__input:-moz-placeholder {
+	color: black; 
+	font-weight: 500;
+	opacity: 1;
+}

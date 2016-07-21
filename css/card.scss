@@ -162,7 +162,7 @@
 	}
 }
 
-.modalBuy {
+.modal {
 	display: none;
 	width: 620px;
 	min-height: 282px;
@@ -177,26 +177,17 @@
 	box-shadow: 0 20px 40px rgba(#293449, 0.75);
 }
 
-.modalBuy__top {
+$modal_padding: 80px;
+
+.modal__top {
 	position: relative;
 	min-height: 165px;
 	box-sizing: border-box;
-	padding: 50px 80px 45px;
-	
-	&:before {
-		content: '';
-		background-image: url(../img/modalBuy__title.png);
-		position: absolute;
-//		float: left;
-		top: 50%;
-		transform: translateY(-50%);
-		margin-right: 33px;
-		width: 66px;
-		height: 66px;
-	}
+	padding: 50px $modal_padding 45px;
 }
 
-.modalBuy__title {
+
+.modal__title {
 	font-size: 30px;
 	line-height: 1.3em;
 	margin: 0;
@@ -205,12 +196,23 @@
 	padding-left: 100px;
 	font-family: Cuprum, sans-serif;
 	letter-spacing: -0.02em;
-	position: relative;
+	
+	&:before {
+		content: '';
+		background-image: url(../img/modalBuy__title.png);
+		position: absolute;
+		top: 50%;
+		left: $modal_padding;
+		transform: translateY(-50%);
+		margin-right: 33px;
+		width: 66px;
+		height: 66px;
+	}
 }
 
 
 
-.modalBuy__bottom {
+.modal__bottom {
 	padding: 37px 80px;
 	box-sizing: border-box;
 	min-height: 112px;
@@ -218,7 +220,7 @@
 	font-size: 0;
 }
 
-.modalBuy__button {
+.modal__button {
 	width: 220px;
 	display: inline-block;
 	
@@ -227,7 +229,7 @@
 	}
 }
 
-.modalBuy__button_close {
+.modal__button_close {
 	background-color: #fff;
 	color: #000;
 	
@@ -241,7 +243,7 @@
 	}
 }
 
-.modalBuy__close {
+.modal__close {
 	width: 25px;
 	height: 25px;
 	font-size: 0;
