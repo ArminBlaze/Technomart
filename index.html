@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script defer src="js/card.js"></script>
 	<script defer src="js/contact_form.js"></script>
+	<script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script defer src="js/map.js"></script>
 </head>
 <body>
 <!--HEADER-->
@@ -289,8 +291,11 @@
 				<h2 class="info__title">Контакты</h2>
 				<p class="info__text">Вы можете забрать товар сами, <br>
 заехав в наш офис:</p>
-				<div class="info__map">
-
+				<div class="info__map map">
+					<div id="map" class="map__hover">
+						<button class="modal__close" type="button">Закрыть</button>
+					</div>
+					<div class="map__click"></div>
 				</div>
 				<a href="#" class="info__contact btn">Заблудились? Напишите нам!</a>
 			</div>

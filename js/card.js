@@ -29,8 +29,6 @@ for(var a = 0; a < modal.length; a++) {
 			modal[b].classList.remove("modalShow");
 			
 			
-					
-			
 		}
 	});
 }
@@ -40,10 +38,14 @@ window.addEventListener("keydown", function(e) {
 		for(var a = 0; a < modal.length; a++) {
 			if (modal[a].classList.contains("modalShow"))
 			modal[a].classList.remove("modalShow");
-			
 		}
+		
+		if (mapWindow.classList.contains("mapShow"))
+			mapWindow.classList.remove("mapShow");
+		
+		mapClick.style.zIndex="1";
 	}
-})
+});
 
 close2.addEventListener("click", function (e) {
 	e.preventDefault();
