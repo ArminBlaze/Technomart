@@ -26,7 +26,7 @@ mapClick.addEventListener("click", function (e) {
 
     function init(){     
         myMap = new ymaps.Map("map", {
-            center: [59.941, 30.2996],
+            center: [59.940, 30.302],
             zoom: 15,
          		controls: ['zoomControl']
         });
@@ -35,9 +35,15 @@ mapClick.addEventListener("click", function (e) {
 			
 			//Содержимое балуна в переменных
 //			var hintStr='<b>'+Peka+'</b><br/>Кликни, чтобы увидеть детали.';
-			var hintStr='<b>OLOLO</b><br/>Кликни, чтобы увидеть детали.';
+			var hintStr='<b>Техномарт</b><br/>Кликни, чтобы увидеть детали.';
 			
-			var headerStr="<div style='margin:5px 7px 7px 7px;'>PEKA" +
+			var headerStr="<div style='margin:5px 7px 7px 7px;'>Техномарт" +
+            "<div class='news-item__title'>"+"Title"+"</div>" +
+            "<div class='news-item__date'>"+"Date"+"</div>" +
+            "<div class='margin-top:-5px;'><a href='"+'#adress'+"' class='news-item__date'>Перейти на страницу магазина</a></div>" +
+            "</div>";
+			
+			var iconStr = "<div style='margin:5px 7px 7px 7px;'>Техномарт" +
             "<div class='news-item__title'>"+"Title"+"</div>" +
             "<div class='news-item__date'>"+"Date"+"</div>" +
             "<div class='margin-top:-5px;'><a href='"+'#adress'+"' class='news-item__date'>Перейти на страницу магазина</a></div>" +
@@ -45,17 +51,19 @@ mapClick.addEventListener("click", function (e) {
 
         myPlacemark = new ymaps.Placemark([59.93895, 30.3150017], { 
             hintContent: hintStr, 
-            balloonContent: headerStr 
+            balloonContent: headerStr
+//						iconCaption: iconStr
         }, {
 					//Опции
 					//Необходимо указать данный тип макета.
 					iconLayout: 'default#image',
 					//Своё изображение иконки метки(путь из корня сайта).
-					iconImageHref: 'img/map_bullet.png',
+					iconImageHref: '../img/map__bullet.png',
 					//Размеры метки
-					iconImageSize: [231, 190],
+					iconImageSize: [22, 43],
 					//Смещение левого верхнего угла иконки относительно ее "ножки" (точки привязки).
-					iconImageOffset: [-49, -188]
+					iconImageOffset: [-11, -40]
+//					iconCaption: "OLOLO"
 				
 					
 					
