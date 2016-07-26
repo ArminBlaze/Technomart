@@ -2393,9 +2393,25 @@ img {
   }
 }
 
+@keyframes shake {
+  0%, 100% {
+    margin-left: 0;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    margin-left: -10px;
+  }
+  20%, 40%, 60%, 80% {
+    margin-left: 10px;
+  }
+}
+
 .modalShow {
   display: block;
   animation: bounce 0.6s;
+}
+
+.modalError {
+  animation: shake 0.6s;
 }
 
 .btn_big {

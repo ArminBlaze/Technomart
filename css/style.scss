@@ -224,11 +224,22 @@ img {
 	100% {transform: translateX(-50%) translateY(-50%);}
 }
 
+@keyframes shake {
+	0%, 100% {margin-left: 0;};
+	10%, 30%, 50%, 70%, 90% {margin-left: -10px;}
+	20%, 40%, 60%, 80% {margin-left: 10px;}
+}
+
 .modalShow {
 	display: block;
 	animation: bounce 0.6s;
 	
 }
+
+.modalError {
+	animation: shake 0.6s;
+}
+
 .modal_form {
 	
 }
@@ -306,3 +317,4 @@ img {
 	font-weight: 500;
 	opacity: 1;
 }
+

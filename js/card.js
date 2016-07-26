@@ -27,6 +27,10 @@ for(var a = 0; a < modal.length; a++) {
 		for(var b = 0; b < modal.length; b++) {
 			if (modal[b].classList.contains("modalShow"))
 			modal[b].classList.remove("modalShow");
+			
+			
+					
+			
 		}
 	});
 }
@@ -36,6 +40,7 @@ window.addEventListener("keydown", function(e) {
 		for(var a = 0; a < modal.length; a++) {
 			if (modal[a].classList.contains("modalShow"))
 			modal[a].classList.remove("modalShow");
+			
 		}
 	}
 })
