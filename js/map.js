@@ -43,19 +43,20 @@ mapClick.addEventListener("click", function (e) {
             "<div class='margin-top:-5px;'><a href='"+'#adress'+"' class='news-item__date'>Перейти на страницу магазина</a></div>" +
             "</div>";
 			
-			var iconStr = "<div class='map__text'>Большая конюшенная ул. 19" +
-            "</div>";
+//			var iconStr = "<div class='map__text'>Большая конюшенная ул. 19" + "</div>";
+//			var iconStr = getAddress(coords);
 			
 			var coords = [59.93895, 30.3150017];
 
       myPlacemark = new ymaps.Placemark(coords, { 
 				hintContent: hintStr, 
 				balloonContent: headerStr,
-				iconContent: iconStr
+				iconCaption: 'поиск...'
 			}, {
 				//Опции
 				//Необходимо указать данный тип макета.
-				iconLayout: 'default#imageWithContent',
+//				iconLayout: 'default#imageWithContent',
+				iconLayout: 'default#imageWithCaption',
 				//Своё изображение иконки метки(путь из корня сайта).
 				iconImageHref: '../img/map__bullet.png',
 				//Размеры метки
