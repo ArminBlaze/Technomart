@@ -70,16 +70,20 @@ mapClick.addEventListener("click", function (e) {
 
 			myMap.geoObjects.add(myPlacemark);
 			
+			getAddress(coords);
 			// Определяем адрес по координатам (обратное геокодирование).
     	function getAddress(coords) {
-        myPlacemark.properties.set('iconCaption', 'поиск...');
+        myPlacemark.properties.set('iconContent', 'поиск...');
         ymaps.geocode(coords).then(function (res) {
             var firstGeoObject = res.geoObjects.get(0);
 
             myPlacemark.properties
                 .set({
-                    iconCaption: firstGeoObject.properties.get('name'),
-                    balloonContent: firstGeoObject.properties.get('text')
+                    iconContent:
+										
+										"<div class='map__text'>" + firstGeoObject.properties.get('name') +
+            "</div>",
+                    balloonContent: "Техномарт на Дворцовой площади"
                 });
         });
     	}

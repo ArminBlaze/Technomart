@@ -105,12 +105,14 @@
 //Этот див в коде карты
 
 .map__text {
-	outline: 1px solid red;
+//	background-color: rgba(white, 0.7);
 	padding: 1px;
 	width: 130px;
 	height: 35px;
 	position: relative;
-	top: 25px;
-//	left: 
-	padding-left: 30px;
+	top: 40px;
+	left: -55px;
+	color: #820101;
+	z-index: -1;
+	font-weight: bold;
 }
