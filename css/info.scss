@@ -101,3 +101,16 @@
 	height: 100%;
 	position: relative;
 }
+
+//Этот див в коде карты
+
+.map__text {
+	outline: 1px solid red;
+	padding: 1px;
+	width: 130px;
+	height: 35px;
+	position: relative;
+	top: 25px;
+//	left: 
+	padding-left: 30px;
+}

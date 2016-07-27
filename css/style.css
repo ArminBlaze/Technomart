@@ -1607,6 +1607,16 @@ img {
   position: relative;
 }
 
+.map__text {
+  outline: 1px solid red;
+  padding: 1px;
+  width: 130px;
+  height: 35px;
+  position: relative;
+  top: 25px;
+  padding-left: 30px;
+}
+
 .footer__top {
   background-color: #32425c;
   color: #f1f5f7;
