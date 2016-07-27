@@ -26,8 +26,8 @@ mapClick.addEventListener("click", function (e) {
 
     function init(){     
         myMap = new ymaps.Map("map", {
-            center: [59.940, 30.302],
-            zoom: 15,
+            center: [59.93895, 30.3199],
+            zoom: 17,
          		controls: ['zoomControl']
         });
 			
@@ -43,10 +43,10 @@ mapClick.addEventListener("click", function (e) {
             "<div class='margin-top:-5px;'><a href='"+'#adress'+"' class='news-item__date'>Перейти на страницу магазина</a></div>" +
             "</div>";
 			
-			var iconStr = "<div class='map__text'>Большая конюшенная ул. 19" +
+			var iconStr = "<div class='map__text'>Большая конюшенная ул., 19" +
             "</div>";
 			
-			var coords = [59.93895, 30.3150017];
+			var coords = [59.938653, 30.323085];
 
       myPlacemark = new ymaps.Placemark(coords, { 
 				hintContent: hintStr, 
@@ -62,7 +62,6 @@ mapClick.addEventListener("click", function (e) {
 				iconImageSize: [22, 43],
 				//Смещение левого верхнего угла иконки относительно ее "ножки" (точки привязки).
 				iconImageOffset: [-11, -40]
-//					iconCaption: "OLOLO"
 				
 					
 					
@@ -70,21 +69,21 @@ mapClick.addEventListener("click", function (e) {
 
 			myMap.geoObjects.add(myPlacemark);
 			
-			getAddress(coords);
+//			getAddress(coords);
 			// Определяем адрес по координатам (обратное геокодирование).
-    	function getAddress(coords) {
-        myPlacemark.properties.set('iconContent', 'поиск...');
-        ymaps.geocode(coords).then(function (res) {
-            var firstGeoObject = res.geoObjects.get(0);
-
-            myPlacemark.properties
-                .set({
-                    iconContent:
-										
-										"<div class='map__text'>" + firstGeoObject.properties.get('name') +
-            "</div>",
-                    balloonContent: "Техномарт на Дворцовой площади"
-                });
-        });
-    	}
+//    	function getAddress(coords) {
+//        myPlacemark.properties.set('iconContent', 'поиск...');
+//        ymaps.geocode(coords).then(function (res) {
+//            var firstGeoObject = res.geoObjects.get(0);
+//
+//            myPlacemark.properties
+//                .set({
+//                    iconContent:
+//										
+//										"<div class='map__text'>" + firstGeoObject.properties.get('name') +
+//            "</div>",
+//                    balloonContent: "Техномарт на Дворцовой площади"
+//                });
+//        });
+//    	}
     }
