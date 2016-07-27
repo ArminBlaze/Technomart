@@ -1607,6 +1607,20 @@ img {
   position: relative;
 }
 
+.map__text {
+  padding: 1px;
+  width: 130px;
+  height: 35px;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  color: #820101;
+  z-index: -1;
+  font-weight: 700;
+  text-align: left;
+  text-shadow: -0   -1px 0   #ece4c6, 0   -1px 0   #ece4c6, -0    1px 0   #ece4c6, 0    1px 0   #ece4c6, -1px -0   0   #ece4c6, 1px -0   0   #ece4c6, -1px  0   0   #ece4c6, 1px  0   0   #ece4c6, -1px -1px 0   #ece4c6, 1px -1px 0   #ece4c6, -1px  1px 0   #ece4c6, 1px  1px 0   #ece4c6, -1px -1px 0   #ece4c6, 1px -1px 0   #ece4c6, -1px  1px 0   #ece4c6, 1px  1px 0   #ece4c6;
+}
+
 .footer__top {
   background-color: #32425c;
   color: #f1f5f7;
