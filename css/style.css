@@ -1587,6 +1587,10 @@ img {
   overflow: hidden;
 }
 
+.info__map_nojs:hover {
+  overflow: visible;
+}
+
 .map__hover {
   position: absolute;
   width: 940px;
@@ -1595,6 +1599,7 @@ img {
   bottom: -107px;
   background-color: #f1efe8;
   box-shadow: 0px 0px 14.72px 1.28px rgba(35, 31, 32, 0.5);
+  background-image: url(../pict/map.jpg);
 }
 
 .mapShow {

@@ -3,6 +3,8 @@ var mapClick = document.querySelector(".map__click");
 var map = document.querySelector(".map__hover");
 var closeMap = map.querySelector(".modal__close");
 
+mapWindow.classList.remove("info__map_nojs");
+
 mapClick.addEventListener("click", function (e) {
 	mapWindow.classList.add("mapShow");	
 	mapClick.style.zIndex="-1";
