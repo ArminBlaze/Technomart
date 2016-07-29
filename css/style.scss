@@ -220,10 +220,10 @@ img {
 
 
 @keyframes bounce {
-	0% {transform: translateX(-50%) translateY(-2000px);}
-	70% {transform: translateX(-50%) translateY(-43%);}
-	90% {transform: translateX(-50%) translateY(-53%);}
-	100% {transform: translateX(-50%) translateY(-50%);}
+	0% {transform:  translateY(-2000px);}
+	70% {transform:  translateY(30px);}
+	90% {transform:  translateY(-10px);}
+	100% {transform:  translateY(0);}
 }
 
 @keyframes shake {
@@ -243,7 +243,7 @@ img {
 }
 
 .modal_form {
-	
+	margin-top: -215px;
 }
 
 .btn_big {

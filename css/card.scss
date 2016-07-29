@@ -175,6 +175,10 @@
 	border-top: 7px solid $btn_color;
 	z-index: 100;
 	box-shadow: 0 20px 40px rgba(#293449, 0.75);
+	
+	transform: none;
+	margin-left: -310px;
+	margin-top: -141px;
 }
 
 $modal_padding: 80px;

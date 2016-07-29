@@ -2005,6 +2005,9 @@ img {
   border-top: 7px solid #ee3643;
   z-index: 100;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  transform: none;
+  margin-left: -310px;
+  margin-top: -141px;
 }
 
 .modal__top {
@@ -2422,16 +2425,16 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateX(-50%) translateY(-2000px);
+    transform: translateY(-2000px);
   }
   70% {
-    transform: translateX(-50%) translateY(-43%);
+    transform: translateY(30px);
   }
   90% {
-    transform: translateX(-50%) translateY(-53%);
+    transform: translateY(-10px);
   }
   100% {
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateY(0);
   }
 }
 
@@ -2454,6 +2457,10 @@ img {
 
 .modalError {
   animation: shake 0.6s;
+}
+
+.modal_form {
+  margin-top: -215px;
 }
 
 .btn_big {
