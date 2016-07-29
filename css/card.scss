@@ -227,6 +227,7 @@ $modal_padding: 80px;
 .modal__button {
 	width: 220px;
 	display: inline-block;
+	vertical-align: top;
 	
 	&:first-child {
 		margin-right: 20px;

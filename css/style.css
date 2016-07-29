@@ -759,11 +759,12 @@ img {
 .header__item {
   float: left;
   width: 150px;
-  height: 42px;
+  min-height: 42px;
   line-height: 42px;
   color: white;
   box-sizing: border-box;
   padding-left: 13px;
+  padding-right: 10px;
 }
 
 .header__item:before {
@@ -800,6 +801,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: top;
   height: 42px;
   line-height: 47px;
   background: #ee3643;
@@ -1111,10 +1113,6 @@ img {
   transform: translateY(-50%);
 }
 
-.menu {
-  margin-top: 35px;
-}
-
 .menu__list {
   list-style: none;
   padding: 0;
@@ -1152,6 +1150,10 @@ img {
   padding: 0 27px;
   color: white;
   font-size: 17px;
+}
+
+.header__info {
+  min-height: 115px;
 }
 
 .bannersBlock {
@@ -1234,7 +1236,7 @@ img {
 
 .slider {
   height: 266px;
-  background-color: #f6b22d;
+  background-color: #c6b39b;
   color: white;
   position: relative;
 }
@@ -1598,7 +1600,7 @@ img {
   right: 0;
   height: 446px;
   bottom: -107px;
-  background-color: #f1efe8;
+  background-color: #e1d0b6;
   box-shadow: 0px 0px 14.72px 1.28px rgba(35, 31, 32, 0.5);
   background-image: url(../img/map.jpg);
 }
@@ -1653,6 +1655,7 @@ img {
 
 .footer__link {
   display: inline-block;
+  vertical-align: top;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -1681,6 +1684,7 @@ img {
 
 .footer__item {
   display: inline-block;
+  vertical-align: top;
   margin-left: 60px;
 }
 
@@ -1745,6 +1749,7 @@ img {
 
 .infoBlock {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 18px;
   font-family: Cuprum, "Trebuchet MS", sans-serif;
@@ -2057,6 +2062,7 @@ img {
 .modal__button {
   width: 220px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .modal__button:first-child {

@@ -19,6 +19,7 @@
 
 .footer__link {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 18px;
 	line-height: 24px;
 	color: #f1f5f7;
@@ -51,6 +52,7 @@
 
 .footer__item {
 	display: inline-block;
+	vertical-align: top;
 	margin-left: 60px;
 	
 	&:first-child {
@@ -115,6 +117,7 @@
 
 .infoBlock {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 16px;
 	line-height: 18px;
 	font-family: $font;
