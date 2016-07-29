@@ -39,9 +39,9 @@ mapClick.addEventListener("click", function (e) {
 //			var hintStr='<b>'+Peka+'</b><br/>Кликни, чтобы увидеть детали.';
 			var hintStr='<b>Техномарт</b><br/>Кликни, чтобы увидеть детали.';
 			
-			var headerStr="<div style='margin:5px 7px 7px 7px;'>Техномарт" +
-            "<div class='news-item__title'>"+"Title"+"</div>" +
-            "<div class='news-item__date'>"+"Date"+"</div>" +
+			var headerStr="<div style='margin:5px 7px 7px 7px;'>" +
+            "<div class='map__title'>"+"Техномарт"+"</div>" +
+            "<div class='map__phone'>"+"+7 (812) 555-05-55"+"</div>" +
             "<div class='margin-top:-5px;'><a href='"+'#adress'+"' class='news-item__date'>Перейти на страницу магазина</a></div>" +
             "</div>";
 			
