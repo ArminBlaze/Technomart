@@ -1,11 +1,125 @@
+"use strict";
+var buy = document.querySelectorAll(".card__buy");
+var modal = document.querySelectorAll(".modal");
+var popup = document.querySelector(".modal_buy");
+var close = popup.querySelector(".modal__close");
+var close2 = popup.querySelector(".modal__button_close");
+//alert(buy);
+
+for(var i = 0; i < buy.length; i++) {
+	buy[i].addEventListener("click", function (e) {
+		e.preventDefault();
+		popup.classList.add("modalShow");
+		//взять card__title
+	});
+}
+	
+//close.addEventListener("click", function (e) {
+//	e.preventDefault();
+//	popup.classList.remove("modalShow");
+//});
+
+for(var a = 0; a < modal.length; a++) {
+	var close = modal[a].querySelector(".modal__close");
+	close.addEventListener("click", function (e) {
+		e.preventDefault();
+		
+		for(var b = 0; b < modal.length; b++) {
+			if (modal[b].classList.contains("modalShow"))
+			modal[b].classList.remove("modalShow");
+			
+			
+		}
+	});
+}
+
+window.addEventListener("keydown", function(e) {
+	if (e.keyCode === 27) { 	 
+		for(var a = 0; a < modal.length; a++) {
+			if (modal[a].classList.contains("modalShow"))
+			modal[a].classList.remove("modalShow");
+		}
+		
+		if (mapWindow.classList.contains("mapShow"))
+			mapWindow.classList.remove("mapShow");
+		
+		mapClick.style.zIndex="1";
+	}
+});
+
+close2.addEventListener("click", function (e) {
+	e.preventDefault();
+	popup.classList.remove("modalShow");
+});
+
+
+// Contact form
+
+"use strict";
+
+var about = document.querySelector(".info__contact");
+var popup2 = document.querySelector(".modal_form");
+
+var form = popup2.querySelector("form");
+
+var userName = popup2.querySelector("[name=name]");
+var email = popup2.querySelector("[name=email]");
+var text = popup2.querySelector("[name=text]");
+var storage = localStorage.getItem("userName");
+var storage2 = localStorage.getItem("email");
+
+
+	about.addEventListener("click", function (e) {
+		e.preventDefault();
+		
+		if(popup2.classList.contains("modalError")) {
+					popup2.classList.remove("modalError");
+		}
+		
+		popup2.classList.add("modalShow");
+		
+		if (storage) {
+			userName.value = storage;
+			email.focus();
+		}
+		
+		if (storage2) {
+			email.value = storage2;
+			text.focus();
+		}
+		else {
+			userName.focus();
+		}
+		
+		form.addEventListener("submit", function(e){
+			
+			if(!userName.value || !email.value || !text.value) {
+				e.preventDefault();
+				console.log("Введите имя, почту и текст письма");
+				
+				popup2.classList.add("modalError");
+				
+				
+			}
+			else {
+				localStorage.setItem("userName", userName.value);
+				localStorage.setItem("email", email.value);
+			}
+			
+		});
+	});
+
+
+	
+
+// Map init 
+
 var mapWindow = document.querySelector(".info__map");
 var mapClick = document.querySelector(".map__click");
 var map = document.querySelector(".map__hover");
 var closeMap = map.querySelector(".modal__close");
 
 function ready() {
-	
-	
 
 	mapWindow.classList.remove("info__map_nojs");
 
@@ -25,7 +139,7 @@ function ready() {
 	ymaps.ready(init);
 }
 
-  document.addEventListener("DOMContentLoaded", ready);
+ document.addEventListener("DOMContentLoaded", ready);
 
 
 //Yandex map
