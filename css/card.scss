@@ -13,7 +13,7 @@
 	vertical-align: top;
 	margin-left: 20px;
 	margin-top: 20px;
-	font-family: "PT Sans", sans-serif;
+	font-family: $font2;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 20px;
@@ -113,7 +113,7 @@
 	border: 3px solid transparent;
 	text-decoration: none;
 	font-size: 14px;
-	font-family: Cuprum, sans-serif;
+	font-family: $font;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -194,7 +194,7 @@ $modal_padding: 80px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 100px;
-	font-family: Cuprum, sans-serif;
+	font-family: $font;
 	letter-spacing: -0.02em;
 	
 	&:before {

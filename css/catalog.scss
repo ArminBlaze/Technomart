@@ -33,7 +33,7 @@ $breadcrumbs_height: 20px;
 .breadcrumbs__link {
 	font-size: 13px;
 	line-height: $breadcrumbs_height;
-	font-family: "PT Sans", sans-serif;
+	font-family: $font2;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: block;
@@ -54,7 +54,7 @@ $breadcrumbs_height: 20px;
 	border-radius: 3px;
 	font-size: 13px;
 	line-height: 18px;
-	font-family: "PT Sans", sans-serif;
+	font-family: $font2;
 	color: black;
 	text-transform: uppercase;
 	box-sizing: border-box;

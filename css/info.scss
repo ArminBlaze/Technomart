@@ -1,5 +1,5 @@
 .info__title {
-	font-family: "Cuprum", sans-serif;
+	font-family: $font;
 	font-size: 30px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -26,7 +26,7 @@
 .info__text {
 	font-size: 13px;
 	line-height: 24px;
-	font-family: "PT Sans", sans-serif;
+	font-family: $font2;
 	margin: 22px 0;
 }
 
@@ -38,7 +38,7 @@
 
 .info__listItem {
 	padding-left: 35px;
-	font-family: "Cuprum", sans-serif;
+	font-family: $font;
 	font-size: 18px;
 	line-height: 20px;
 	margin-bottom: 20px;

@@ -564,7 +564,7 @@ body {
   height: 0;
   background-color: #fff;
   min-width: 960px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-size: 17px;
 }
 
@@ -879,7 +879,7 @@ img {
   border: none;
   font-size: 17px;
   line-height: 18px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   outline: none;
 }
 
@@ -939,7 +939,7 @@ img {
 .header__about {
   font-size: 16px;
   line-height: 23px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-style: italic;
   color: #ee3643;
   padding: 4px 60px 4px 62px;
@@ -1149,7 +1149,7 @@ img {
 
 .menu__link,
 .menu__item_active {
-  padding: 0 31px;
+  padding: 0 27px;
   color: white;
   font-size: 17px;
 }
@@ -1201,7 +1201,7 @@ img {
 .banner__title {
   font-size: 24px;
   line-height: 30px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-weight: 700;
 }
 
@@ -1249,7 +1249,7 @@ img {
 .slider__text {
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum", sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   margin-top: 5px;
 }
 
@@ -1510,7 +1510,7 @@ img {
 }
 
 .info__title {
-  font-family: "Cuprum", sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: normal;
@@ -1549,7 +1549,7 @@ img {
 
 .info__listItem {
   padding-left: 35px;
-  font-family: "Cuprum", sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 20px;
@@ -1711,7 +1711,7 @@ img {
 .footer__copy {
   font-size: 16px;
   line-height: 18px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
 }
 
 .social {
@@ -1741,7 +1741,7 @@ img {
   display: inline-block;
   font-size: 16px;
   line-height: 18px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
 }
 
 .infoBlock:last-child {
@@ -1943,7 +1943,7 @@ img {
   border: 3px solid transparent;
   text-decoration: none;
   font-size: 14px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -2021,7 +2021,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 100px;
-  font-family: Cuprum, sans-serif;
+  font-family: Cuprum, "Trebuchet MS", sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -2528,6 +2528,25 @@ img {
   color: black;
   font-weight: 500;
   opacity: 1;
+}
+
+.modal_nojs {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  margin: 30px auto;
+  box-shadow: none;
+  border: none;
+}
+
+.modal_nojs .modal__close {
+  display: none;
+}
+
+.modal_nojs .modal__bottom {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
