@@ -69,6 +69,7 @@
 }
 
 .info__map {
+	display: block;
 	margin-top: 30px;
 	height: 158px;
 	background-color: darkgray;
@@ -81,9 +82,8 @@
 }
 
 .info__map_nojs {
-	&:hover {
-		overflow: visible;
-	}
+	height: auto;
+	margin-bottom: 60px;
 }
 
 .map__hover {
@@ -146,4 +146,8 @@
 .map__title {
 	color: #820101;
 	font-size: 17px;
+}
+
+.map__hover_nojs {
+	position: static;
 }

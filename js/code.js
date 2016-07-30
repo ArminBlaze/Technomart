@@ -121,7 +121,9 @@ var closeMap = map.querySelector(".modal__close");
 
 function ready() {
 
-	mapWindow.classList.remove("info__map_nojs");
+	mapWindow.addEventListener("click", function (e) {
+		e.preventDefault();
+	});
 
 	mapClick.addEventListener("click", function (e) {
 		mapWindow.classList.add("mapShow");	
