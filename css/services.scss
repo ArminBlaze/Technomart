@@ -43,7 +43,7 @@
   position: relative;
 //  background: rgba(black, 0.5);
 	width: 240px;
-	height: 279px;
+	min-height: 279px;
 	box-sizing: border-box;
 //	padding-top: 49px;
 }
@@ -62,7 +62,7 @@
 .services__tabs label {
 	cursor: pointer;
 	display: block;
-	height: 61px;
+	min-height: 61px;
 //	line-height: 62px;
 	position: relative;
 //	text-align: center;

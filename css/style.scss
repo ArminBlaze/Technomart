@@ -169,14 +169,17 @@ img {
 	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
+//	float: left;
 }
 
 .titleBlock__link {
 	position: absolute;
+//	float: right;
 	right: 25px;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 253px;
+//	margin-right: 25px;
 }
 
 .titleBlock_blue {

@@ -1208,12 +1208,13 @@ img {
 }
 
 .banner__link {
-  width: auto;
-  min-width: 135px;
+  max-width: 150px;
+  width: 135px;
   display: inline-block;
   vertical-align: top;
   background-color: rgba(0, 0, 0, 0.1);
   margin-top: 14px;
+  margin-bottom: 20px;
 }
 
 .banner__link:hover {
@@ -1406,7 +1407,7 @@ img {
   z-index: 3;
   position: relative;
   width: 240px;
-  height: 279px;
+  min-height: 279px;
   box-sizing: border-box;
 }
 
@@ -1424,7 +1425,7 @@ img {
 .services__tabs label {
   cursor: pointer;
   display: block;
-  height: 61px;
+  min-height: 61px;
   position: relative;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
